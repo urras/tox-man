@@ -1,0 +1,80 @@
+.\" manpage for toxic
+.\" contact notadecent@tox.im to correct errors or typos
+.TH toxic 1 "23 nov 2013" "Tox Project"
+.SH NAME
+.B toxic
+\- CLI Tox client
+
+.SH SYNOPSIS
+toxic [-f | -n]
+
+.SH DESCRIPTION
+toxic is a feature-rich CLI client for toxcore
+
+.SH OPTIONS
+.B -f
+filename
+    Use alternate datafile "filename"
+.br
+.B -n
+    Don't write changes to datafile
+
+.SH USAGE
+Change 
+.B buffers
+with [Tab]
+.br
+The following commands must be preceded by a slash ( 
+.B/ 
+)
+when run outside the main buffer.
+.br
+.B /connect
+IP PORT KEY
+    Manually connect to one of the DHT servers available from <http://wiki.tox.im/Servers>
+.br
+.B /nick
+nick
+    Set nickname
+.br
+.B /status
+.br
+type message
+    Set status to [ online | busy | away ] with optional message
+.br
+.B /note
+message
+    Set personal note
+.br
+.B /myid
+    Print ID
+.br
+.B /add
+ID message
+    Add ID with optional greeting message
+.br
+.B /accept
+n
+    Accept friendrequest of specified n
+.br
+.B /groupchat
+    Create groupchat
+.br
+.B /help
+    Print help overview message
+.br
+.B /clear
+    Clear buffer
+.br
+.B /quit, /q, /exit
+    Exit toxic
+
+.SH BUGS
+Please report bugs on GitHub <https://github.com/Tox/Toxic/issues>
+
+.SH AUTHOR
+Original author: plutooo
+.br
+Repo maintainer: JFreegman
+.br
+Author  manpage: notadecent
