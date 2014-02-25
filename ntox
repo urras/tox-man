@@ -1,0 +1,101 @@
+.\" manpage for nTox
+.\" contact cl34r@riseup.net or notadecent@tox.im to correct errors or typos
+.TH nTox 1 "3 Dec 2013" "Tox Project"
+.SH NAME
+.B nTox
+\- CLI Tox client used for testing purposes
+
+.SH SYNOPSIS
+ nTox [OPTION] [<IP> <PORT> <KEY>]
+
+.SH DESCRIPTION
+nTox is a minimalistic CLI client for Toxcore that is mainly used for testing purposes
+
+.SH OPTIONS
+.B -f
+filename
+    Use alternate datafile
+.br
+.B --ipv4
+    Use IPv4 ONLY
+.br 
+.B --ipv6
+    Use IPv6 and IPv4
+.SH COMMANDS
+.br
+.B /q
+    Exit nTox
+.br
+.B /x
+    Prints your ID
+.br
+.B /l
+    List friends
+.B /cr
+    Reset conversation
+.br
+.B /h
+    Print main commands
+.br
+.B /h
+friend
+    Print friend related commands
+.br
+.B /h
+group
+    Print group related commands
+.br
+.B /g 
+    Creates group
+.br
+.B /d
+FRIENDNUMBER
+    Delete friend
+.br
+.B /f
+ID MESSAGE
+    Add friend
+.br
+.B /s
+STATUS
+    Change status [ Online | Busy | Away ]
+.br
+.B /n
+NICK
+    Change your nickname
+.br
+.B /i
+FRIENDNUMBER
+    Invite a friend to a group
+.br
+.B /z
+GROUPNUMBER
+    Sends message to a group
+.br
+.B /p
+GROUPNUMBER
+    List a groups peers
+.br
+.B /cg
+GROUPNUMBER
+    Talk to that group per default
+.br
+.B /m
+FRIENDNUMBER
+    Send message to a friend
+.br
+.B /t
+FRIENDNUMBER FILENAME
+    Send a file to a friend
+.br
+.B /cf
+FRIENDNUMBER
+    Talk to that friend per default
+.SH BUGS
+Please report bugs on GitHub <https://github.com/irungentoo/ProjectTox-Core/issues>
+
+.SH AUTHOR
+Original author and repo maintainer: irungentoo <irungentoo@gmail.com>
+.br
+Author manpage                     : cl34r      <cl34r@riseup.net>
+                                     notadecent <notadecent@tox.im>
