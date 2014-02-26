@@ -19,6 +19,10 @@ filename
 .B -n
     Don't write changes to datafile
 
+.br
+.B -4
+    Force an IPv4 connection
+
 .SH USAGE
 Change 
 .B buffers
